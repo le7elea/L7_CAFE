@@ -25,30 +25,6 @@ const menuItems = [
         image: "images/coffee3.jpg"
       },
     {
-        id: 4,
-        name: "Cold Brew Coffee",
-        price: 180,
-        category: "coffee",
-        description: "Cold brew coffee is coffee brewed slowly with cold water for a smooth, less acidic taste.",
-        image: "images/colfcoffee1.jpg"
-      },
-    {
-        id: 5,
-        name: "Iced Latte",
-        price: 160,
-        category: "coffee",
-        description: "An Iced Latte is a coffee drink made with espresso, chilled milk, and ice.",
-        image: "images/coldcoffee2.jpg"
-      },
-    {
-        id: 6,
-        name: "Iced Mocha",
-        price: 180,
-        category: "coffee",
-        description: "An Iced Mocha is a chilled coffee drink made with espresso, chocolate, milk, and ice.",
-        image: "images/coldcoffee3.jpg"
-      },
-    {
         id: 7,
         name: "Swiss Sandwich on Rye",
         price: 250,
