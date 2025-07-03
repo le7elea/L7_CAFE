@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L7 CAFÉ</title>
+
+  <!--LOGO ICON-->
+  <link rel="shortcut icon" href="images/l7logo.png">
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="onlinePage.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+  <!--PRELOADER-->
+ <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">L7 CAFÉ</p>
+  </div>
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Liteport, Tagbilaran City, Bohol, Philippines
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 8.00 am to 12.00 am</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+1 123 456 7890</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:l7cafe@gmail.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">l7cafe@gmail.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="images/l7logo.png" width="160" height="50" alt="L7 CAFE">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="images/l7logo.png" width="160" height="50" alt="L7 CAFE">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#reservation" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Book</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Liteport, Tagbilaran City <br>
+            Bohol, Philippines
+          </address>
+
+          <p class="body-4 navbar-text">Open: 8.00 am - 12.00 am</p>
+
+          <a href="mailto:l7cafe@gmail.com" class="body-4 sidebar-link">l7cafe@gmail.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Contact</p>
+
+          <a href="tel:+11234567890" class="body-1 contact-number hover-underline">
+            +11-234-567890
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="onlinePage.html" class="btn btn-secondary">
+        <span class="text text-1">Order Online</span>
+
+        <span class="text text-2" aria-hidden="true">order online</span>
+      </a>
+
+      <div class="icons">
+         <div class="cart-container">
+                <i href="online.html" id="cart-icon" class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+      </div>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="images/hero1.png" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br>
+              delicious food
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="images/hero3.png" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="images/hero2.png" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="onlinePage.html" class="hero-btn has-after">
+          <img src="images/badge1.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Order Online</span>
+        </a>
+
+      </section>
+
+      <section class="section service bg-black-10 text-center" aria-label="service" id="menu">
+        <div class="container">
+          
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <p class="section-text">
+            At L7 Cafe, we serve premium coffee, handcrafted deli food, and refreshing sweet drinks — all made with quality ingredients and a passion for flavor.</p>
+
+        <ul class="grid-list">
+
+          <li>
+            <div class="service-card">
+
+              <a href="#" class="has-before hover:shine">
+                <figure class="card-banner img-holder" style="--width:285; --height: 336;">
+                  <img src="images/coffee2.jpg" alt="COffee" width="285" height="336" loading="lazy" class="img-cover">
+                </figure>
+              </a>
+
+              <div class="card-content">
+                <h3 class="title-4 card-title">
+                  <a href="#">Coffee</a>
+                </h3>
+                
+                <a href="menu.html?category=coffee" class="btn-text hover-underline label-2 category-link">View Menu</a>
+
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <a href="menu.html?category=delis" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="images/deli3.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Delis'</a>
+                  </h3>
+
+                  <a href="menu.html?category=delis" class="btn-text hover-underline label-2">View Menu</a>
+
+            </div>
+          </li>
+
+           <li>
+            <div class="service-card">
+              <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="images/shake2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Sweet Drinks</a>
+                  </h3>
+
+                  <a href="menu.html?category=sweetDrinks" class="btn-text hover-underline label-2">View Menu</a>
+
+            </div>
+          </li>
+
+        </ul>
+
+        </div>
+      </section>
+
+      <!--About Us-->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-lab">Our Story</p>
+
+            <h2 class="healine-1 section-title">Every Flavor Tells a Story</h2>
+
+            <p class="section-text">
+              At L7 Café & Deli, we believe in the perfect blend of great coffee and delicious food. 
+            Our passion for quality drives us to serve freshly brewed coffee, handcrafted beverages, 
+            and a variety of flavorful bites made with the finest ingredients. Whether you're grabbing 
+            a quick coffee, enjoying a hearty meal, or indulging in a sweet treat, we’re here to make every moment enjoyable. 
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+1234567890" class="body-1 contact-number hover-underline">+11234567890</a>
+
+            <a href="about.html" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="images/coffeeShop.jpg" width="570" loading="lazy" alt="about banner"
+            class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="images/barista.jpg" width="285" height="285" loading="lazy" alt=""
+              class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="images/badge.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          <img src="images/sidepic.png" width="300" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+      <!--special combo-->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="images/special.png" alt="special dish" width="940" height="900" class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="images/badge-1.png" alt="badge" width="28" height="41" loading="lazy" class="abs-img">
+
+            <p class="section-subtitle label-2">Special Combo</p>
+
+            <h2 class="headline-1 secton-title">Espresso Roast Beef on Brioche with Coffee Aiol</h2>
+
+            <p class="section-text">
+              A gourmet sandwich with espresso-rubbed roast beef on toasted brioche, topped with arugula, caramelized onions, and coffee aioli. Paired with artisan cold brew or a smooth cappuccino for a bold, elegant flavor experience.</p>
+
+            <div class="wrapper">
+              <span class="span bosy-1">&#x20B1;450.00</span>
+            </div>
+
+            <a href="menu.html?category=specialCombo" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+          </div>
+        </div>
+
+        <img src="images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="images/badge1.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section> 
+
+      <!--Contact Us-->
+      <section class="contact" id="contact">
+        <div class="contact-container">
+
+          <div class="form contact-form bg-black-10">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Get In Touch</h2>
+
+              <iframe width="100%" height="250" style="margin-bottom: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.
+                094127103464!2d123.87036777435385!3d9.672998478577458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x33aa4d00263e8ef5%3A0x4b34d325de3e6e50!2sLite%20Port%20Center!5e0!3m2!1sen!2sph!
+                4v1740494861138!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+               </iframe>
+
+
+               <div class="input-wrapper">
+                <input  type="text" class="input-field" name="name" placeholder="Your Name" autocomplete="off">
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+                
+              </div>
+              <input type="email" name="email" placeholder="Email" autocomplete="off" class="input-field">
+              
+              
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Contact now</span>
+
+                <span class="text text-2" aria-hidden="true">Contact now</span>
+              </button>
+
+            </form>
+
+             <div class="form-right text-center" style="background-image: url('images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Contact Us</h2>
+
+              <p class="contact-label">Contact Number</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+11-234-567890</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Email</p>
+
+              <p class="body-4">
+                l7cafe@gmail.com
+              </p>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                Liteport, Tagbilaran City, <br>
+                Bohol, Philippines
+              </address>
+
+              <p class="contact-label">Operatng Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                8.00 am - 12.00 am
+              </p>
+
+
+              <p class="body-4">
+                 “Brewing joy daily — where coffee comforts, sweets smile, and every bite feels like home.”
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+    <section class="reservation" id="reservation">
+    <div class="container">
+      <div class="split-layout">
+        <!-- Carousel Side -->
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-slide"></div>
+            <div class="carousel-slide"></div>
+            <div class="carousel-slide"></div>
+          </div>
+          <div class="carousel-caption">
+            <h3>Experience Coffee Dining</h3>
+            <p>Reserve your table for an unforgettable sip journey</p>
+          </div>
+          <div class="carousel-controls">
+            <div class="carousel-dot active"></div>
+            <div class="carousel-dot"></div>
+            <div class="carousel-dot"></div>
+          </div>
+        </div>
+        
+        <!-- Reservation Form Side -->
+        <div class="reservation-form">
+          <form action="" class="input-form">
+            <h2 class="headline-1 text-center">Online Reservation</h2>
+            <p class="form-text text-center">
+              Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
+              or fill out the order form
+            </p>
+            
+            <div class="form-wrapper">
+              <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+              <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+            </div>
+            
+            <div class="form-wrapper">
+              <div class="icon-wrapper">
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                <select name="person" class="input-field">
+                  <option value="1-person">1 Person</option>
+                  <option value="2-person">2 Person</option>
+                  <option value="3-person">3 Person</option>
+                  <option value="4-person">4 Person</option>
+                  <option value="5-person">5 Person</option>
+                  <option value="6-person">6 Person</option>
+                  <option value="7-person">7 Person</option>
+                  <option value="7-person">8 Person</option>
+                  <option value="7-person">9 Person</option>
+                  <option value="7-person">10 Person</option>
+                </select>
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+              </div>
+              
+              <div class="icon-wrapper">
+                <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                <input type="date" name="reservation-date" class="input-field">
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+              </div>
+              
+              <div class="icon-wrapper">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <select name="time" class="input-field">
+                  <option value="08:00am">08 : 00 am</option>
+                  <option value="09:00am">09 : 00 am</option>
+                  <option value="010:00am">10 : 00 am</option>
+                  <option value="011:00am">11 : 00 am</option>
+                  <option value="012:00am">12 : 00 pm</option>
+                  <option value="01:00pm">01 : 00 pm</option>
+                  <option value="02:00pm">02 : 00 pm</option>
+                  <option value="03:00pm">03 : 00 pm</option>
+                  <option value="04:00pm">04 : 00 pm</option>
+                  <option value="05:00pm">05 : 00 pm</option>
+                  <option value="06:00pm">06 : 00 pm</option>
+                  <option value="07:00pm">07 : 00 pm</option>
+                  <option value="08:00pm">08 : 00 pm</option>
+                  <option value="09:00pm">09 : 00 pm</option>
+                  <option value="10:00pm">10 : 00 pm</option>
+                  <option value="10:00pm">11 : 00 pm</option>
+                  <option value="10:00pm">12 : 00 am</option>
+                </select>
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
+            
+            <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+            
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Book A Table</span>
+              <span class="text text-2" aria-hidden="true">Book A Table</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    </article>
+  </main>
+
+  <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Order</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items">
+                    <!-- Cart items will be inserted here -->
+                </div>
+                <div class="cart-summary">
+                    <div class="subtotal">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">$0.00</span>
+                    </div>
+                    <div class="tax">
+                        <span>Tax (8%):</span>
+                        <span id="cart-tax">$0.00</span>
+                    </div>
+                    <div class="total">
+                        <span>Total:</span>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="empty-cart">Empty Cart</button>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Checkout</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Order Type:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="delivery" name="orderType" value="delivery" checked>
+                            <label for="delivery">Delivery</label>
+                            <input type="radio" id="pickup" name="orderType" value="pickup">
+                            <label for="pickup">Pickup</label>
+                        </div>
+                    </div>
+                    <div id="delivery-fields">
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city">
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">Zip Code:</label>
+                            <input type="text" id="zipcode" name="zipcode">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Special Instructions:</label>
+                        <textarea id="notes" name="notes"></textarea>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div id="checkout-items">
+                            <!-- Order summary will be inserted here -->
+                        </div>
+                        <div class="checkout-total">
+                            <span>Total:</span>
+                            <span id="checkout-total">$0.00</span>
+                        </div>
+                    </div>
+                    <button type="submit" id="place-order-btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Confirmation</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-message">
+                    <div class="success-icon">✓</div>
+                    <h3>Thank you for your order!</h3>
+                    <p>A restaurant representative will contact you shortly to confirm your order and process payment.</p>
+                </div>
+                <div class="confirmation-details">
+                    <h4>Order Details:</h4>
+                    <div id="confirmation-items">
+                        <!-- Order details will be inserted here -->
+                    </div>
+                    <div class="confirmation-info">
+                        <div id="customer-info">
+                            <!-- Customer info will be inserted here -->
+                        </div>
+                        <div class="confirmation-total">
+                            <span>Total:</span>
+                            <span id="confirmation-total">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="back-to-menu-btn">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+
+
+  <!--Footer-->
+
+  <footer class="footer section has-bg-image text-center" style="background-image: url(images/footer-bg.png);">
+    <div class="container">
+      <div class="footer-top grid-list">
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="images/l7logo.png" alt="L7 Cafe" width="190" height="50" loading="lazy">
+          </a>
+
+          <address class="body-4">
+            Liteport, Tagbilaran City, Bohol, Philippines
+          </address>
+
+          <a href="mailto:l7cafe@gmail.com" class="body-4 contact-link">l7cafe@gmail.com</a>
+
+          <a href="tel:+11234567890" class="body-4 contact-link">Booking Request : +11-234-567890</a>
+
+          <p class="body-4">
+            Open : 08:00 am - 10:00 pm
+          </p>
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field" id="myEmail">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+          <li>
+            <a href="#reservation" class="label-2 footer-link hover-underline">Book</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="https://www.facebook.com/" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="https://x.com/" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/Z6Dx-o3vfJY?si=oyftO5SyZTOv2wiE" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="https://maps.app.goo.gl/5pC3PXqUTFrs3MoX9" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2025 L7 CAFÉ. LEA LABRADOR | BSCS - 3
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="indexscript.js"></script>
+  <script src="online.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

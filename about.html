@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L7 CAFÉ</title>
+
+  <!--LOGO ICON-->
+  <link rel="shortcut icon" href="images/l7logo.png">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="onlinePage.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  
+    
+    <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Liteport, Tagbilaran City, Bohol, Philippines
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 8.00 am to 12.00 am</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+1 123 456 7890</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:l7cafe@gmail.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">l7cafe@gmail.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="images/l7logo.png" width="160" height="50" alt="L7 CAFE">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="images/l7logo.png" width="160" height="50" alt="L7 CAFE">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html?#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html?#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html?#reservation" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Book</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Liteport, Tagbilaran City <br>
+            Bohol, Philippines
+          </address>
+
+          <p class="body-4 navbar-text">Open: 8.00 am - 12.00 am</p>
+
+          <a href="mailto:l7cafe@gmail.com" class="body-4 sidebar-link">l7cafe@gmail.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Contact</p>
+
+          <a href="tel:+11234567890" class="body-1 contact-number hover-underline">
+            +11-234-567890
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="onlinePage.html" class="btn btn-secondary">
+        <span class="text text-1">Order Online</span>
+
+        <span class="text text-2" aria-hidden="true">order online</span>
+      </a>
+
+      <div class="icons">
+         <div class="cart-container">
+                <i id="cart-icon" class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+      </div>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+     <section class="hero">
+        <div class="container">
+            <h1 class="fade-in">Our Story</h1>
+            <p class="fade-in">"Rooted in craft, brewed with soul — L7 CAFE is where bold coffee, fresh deli bites, and sweet sips come together in perfect harmony. Discover the taste, feel the vibe."</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text fade-in">
+                    <h2>Where It All Began</h2>
+                    <p>Founded in 2025, L7 CAFE began as a cozy corner spot with a big dream: to serve more than just coffee, but to create a space where comfort, flavor, and community meet.</p>
+                    <p>What started as a small café with a few tables and a passion for quality has grown into a favorite local destination for those craving handcrafted coffee, fresh deli bites, and sweet, refreshing drinks. And while we’ve expanded, our heart remains the same — grounded in the belief that great food and drink bring people together.</p>
+                    <p>At L7 CAFE, every cup and every plate tells a story — of carefully selected beans, thoughtfully prepared ingredients, and the friendly faces behind the counter. Whether you're here for your morning boost, a lunch break escape, or an afternoon treat, we’re here to make it memorable.</p>
+                </div>
+                <div class="story-image fade-in">
+                    <img src="images/carousel1.jpg" alt="Our restaurant's early days">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <h2 class="fade-in">Our Philosophy</h2>
+                <p class="fade-in">At L7 CAFE, we believe that a good cup of coffee — like a good meal — is more than just fuel. It’s a daily ritual, a reason to pause, and a chance to connect with the people and world around us.
+                  Every decision we make is guided by three core principles:</p>
+                
+                <div class="values">
+                    <div class="value-card fade-in">
+                        <div class="value-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Sustainability</h3>
+                        <p>At L7 CAFE, we’re brewing a better future — one cup at a time. We’re committed to reducing waste, sourcing our ingredients thoughtfully, and making choices that respect the planet. From using eco-friendly packaging to cutting down food waste, sustainability is part of every sip and every bite.</p>
+                    </div>
+                    
+                    <div class="value-card fade-in">
+                        <div class="value-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>Our café is built on connection — not just with our guests, but with the local roasters, bakers, and makers who share our values. By collaborating with nearby producers and celebrating local talent, we keep our roots strong and our community thriving.</p>
+                    </div>
+                    
+                    <div class="value-card fade-in">
+                        <div class="value-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Craftsmanship</h3>
+                        <p>Whether it's a carefully brewed coffee, a hand-pressed sandwich, or a perfectly balanced drink, we believe in doing things with intention. Every item on our menu is made with care, using quality ingredients and a passion for the little details that make every visit special.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Team -->
+    <section class="team">
+        <div class="container">
+            <h2 class="fade-in">Meet Our Culinary Team</h2>
+            <p class="fade-in">The heart and soul of Harvest Table is our dedicated team of culinary professionals who bring passion, creativity, and expertise to every dish we serve.</p>
+            
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <img src="images/staff1.jpg" alt="Chef Michael Harrison" class="member-image">
+                    <h3 class="member-name">Lea Labrador</h3>
+                    <p class="member-role">Founder & Coffee Curator</p>
+                    
+                    <p class="member-role">"Ley"</p>
+                    <p>Fueled by a love for coffee and community, Lea founded L7 CAFE to create a warm, creative space. He handpicks every bean and partners with local roasters to ensure each cup reflects L7’s passion and craft.
+</p>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <img src="images/satff2.jpg" alt="Chef Sophia Chen" class="member-image">
+                    <h3 class="member-name">Maycell Maceren</h3>
+                    <p class="member-role">Head Barista & Drink Innovator</p>
+                    <p class="member-role">"May"</p>
+                    <p>Maycell crafts each drink with care, from smooth cappuccinos to bold refreshers. With a specialty coffee background, she leads our seasonal creations, blending the familiar with fresh, exciting flavors.</p>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <img src="images/staff3.jpg" alt="Alex Rivera" class="member-image">
+                    <h3 class="member-name">Nicole Lagura</h3>
+                    <p class="member-role">Deli Chef & Savory Specialist</p>
+                    <p class="member-role">"Khulet"</p>
+                    <p>Nicole brings bold flavor to L7’s savory side, crafting fresh, satisfying dishes inspired by street food, café classics, and global tastes—always big on taste, never fussy.</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Ingredients -->
+    <section class="ingredients">
+        <div class="container">
+            <div class="ingredients-content">
+                <div class="ingredients-text fade-in">
+                    <h2>Our Ingredients</h2>
+                    <p>At L7 CAFE, every sip and bite starts with thoughtfully chosen ingredients. We believe that great flavor begins with freshness — that’s why we prioritize seasonal produce, locally roasted coffee, and quality goods from trusted regional partners who share our commitment to care and craft.</p>
+                    <p>We source many of our deli ingredients, fruits, and herbs from nearby farms and markets, selecting what's in season to keep our menu vibrant and ever-evolving. Our coffee is brewed from ethically sourced beans, roasted in small batches to ensure depth, character, and consistency in every cup.</p>
+                    <p>Even the smallest details matter — whether it's fresh greens in your sandwich, hand-blended syrups in your sweet drinks, or house-made spreads that add an extra layer of flavor.</p>
+                    <p>We also maintain a small herb and garnish garden on-site to bring a personal, fresh-picked touch to our drinks and dishes. It's our way of keeping things grounded, flavorful, and always inspired by nature.</p>
+                </div>
+                
+                <div class="ingredients-images fade-in">
+                    <img src="images/ingredients1.jpg" alt="Fresh local vegetables" class="ingredient-img">
+                    <img src="images/ingredients2.jpg" alt="Sustainable seafood" class="ingredient-img">
+                    <img src="images/ingredients4.jpg" alt="Artisanal cheeses" class="ingredient-img">
+                    <img src="images/ingredients3.jpg" alt="Our kitchen garden" class="ingredient-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="fade-in">What Our Guests Say</h2>
+            
+            <div class="testimonial-slider fade-in">
+                <div class="testimonial">
+                    <p class="testimonial-text">Every visit to L7 CAFE is a moment to savor. From the first sip to the last bite, you can taste the care in every ingredient — and the warmth of the team makes every visit feel like coming home.</p>
+                    <p class="testimonial-author">Diane Jala</p>
+                    <p class="testimonial-role">Food Writer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Experience Our Seasonal Menu</h2>
+                <p>Join us for a café experience that celebrates fresh, local ingredients and handcrafted flavor. Whether you’re grabbing your morning coffee, enjoying a laid-back lunch, or treating yourself to something sweet, we can’t wait to welcome you to L7 CAFE.</p>
+                <div class="cta-buttons">
+                    <a href="index.html?#reservation" class="cta-btn cta-btn-primary">Reserve a Table</a>
+                    <a href="menu.html?category=all" class="cta-btn cta-btn-secondary">View Our Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Order</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items">
+                    <!-- Cart items will be inserted here -->
+                </div>
+                <div class="cart-summary">
+                    <div class="subtotal">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">$0.00</span>
+                    </div>
+                    <div class="tax">
+                        <span>Tax (8%):</span>
+                        <span id="cart-tax">$0.00</span>
+                    </div>
+                    <div class="total">
+                        <span>Total:</span>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="empty-cart">Empty Cart</button>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Checkout</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Order Type:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="delivery" name="orderType" value="delivery" checked>
+                            <label for="delivery">Delivery</label>
+                            <input type="radio" id="pickup" name="orderType" value="pickup">
+                            <label for="pickup">Pickup</label>
+                        </div>
+                    </div>
+                    <div id="delivery-fields">
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city">
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">Zip Code:</label>
+                            <input type="text" id="zipcode" name="zipcode">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Special Instructions:</label>
+                        <textarea id="notes" name="notes"></textarea>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div id="checkout-items">
+                            <!-- Order summary will be inserted here -->
+                        </div>
+                        <div class="checkout-total">
+                            <span>Total:</span>
+                            <span id="checkout-total">$0.00</span>
+                        </div>
+                    </div>
+                    <button type="submit" id="place-order-btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Confirmation</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-message">
+                    <div class="success-icon">✓</div>
+                    <h3>Thank you for your order!</h3>
+                    <p>A restaurant representative will contact you shortly to confirm your order and process payment.</p>
+                </div>
+                <div class="confirmation-details">
+                    <h4>Order Details:</h4>
+                    <div id="confirmation-items">
+                        <!-- Order details will be inserted here -->
+                    </div>
+                    <div class="confirmation-info">
+                        <div id="customer-info">
+                            <!-- Customer info will be inserted here -->
+                        </div>
+                        <div class="confirmation-total">
+                            <span>Total:</span>
+                            <span id="confirmation-total">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="back-to-menu-btn">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+
+  <!--Footer-->
+
+  <footer class="footer section has-bg-image text-center" style="background-image: url(images/footer-bg.png);">
+    <div class="container">
+      <div class="footer-top grid-list">
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="images/l7logo.png" alt="L7 Cafe" width="190" height="50" loading="lazy">
+          </a>
+
+          <address class="body-4">
+            Liteport, Tagbilaran City, Bohol, Philippines
+          </address>
+
+          <a href="mailto:l7cafe@gmail.com" class="body-4 contact-link">l7cafe@gmail.com</a>
+
+          <a href="tel:+11234567890" class="body-4 contact-link">Booking Request : +11-234-567890</a>
+
+          <p class="body-4">
+            Open : 08:00 am - 10:00 pm
+          </p>
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field" id="myEmail">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="index.html" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="menu.html" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="index.html?#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="index.html?#contact" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+          <li>
+            <a href="index.html?#reservation" class="label-2 footer-link hover-underline">Book</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="https://www.facebook.com/" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="https://x.com/" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/Z6Dx-o3vfJY?si=oyftO5SyZTOv2wiE" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="https://maps.app.goo.gl/5pC3PXqUTFrs3MoX9" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2025 L7 CAFÉ. LEA LABRADOR | BSCS - 3
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+
+  
+  <script src="online.js"></script>
+  <script src="indexscript.js"></script>
+  <script src="about.js"></script>
+  
+</body>
+</html>
+

@@ -1,0 +1,486 @@
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #c0bbbc;
+}
+
+/* Menu Categories */
+
+.menu-section{
+    margin-block-start: 200px;
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.category-btn {
+    padding: 0.5rem 1rem;
+    background-color: #857a7a;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.5rem;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background-color: #966446;
+    color: #fff;
+}
+
+/* Menu Items */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.menu-item {
+    background: url(images/form-pattern.png);
+    background-color: rgb(56, 48, 32);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 15px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item-image {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover .menu-item-image img {
+    transform: scale(1.1);
+}
+
+.menu-item-info {
+    padding: 1rem;
+    color: white;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.menu-item-price {
+    font-weight: 700;
+    color: #fffefe;
+    font-size: 2rem;
+}
+
+.menu-item-description {
+    color: #fafafa;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #a0762c;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #c27818;
+}
+
+.cart-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(3, 3, 3, 0.5);
+}
+
+.modal-content {
+    background-color: #3b3b3b;
+    margin: 10vh auto;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #030303;
+}
+
+.modal-header h2 {
+    margin-bottom: 0;
+}
+
+.modal-header h2::after {
+    display: none;
+}
+
+.close-btn {
+    font-size: 4rem;
+    cursor: pointer;
+    color: #fff9f9;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #fd1f01;
+}
+
+.modal-body {
+    padding: 1rem;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.modal-footer button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+#empty-cart {
+    background-color: #080808;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+#empty-cart:hover {
+    background-color: #6f3131;
+    color: black;
+}
+
+#checkout-btn, 
+#place-order-btn {
+    background-color: #7a5a14;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+#checkout-btn:hover,
+#place-order-btn:hover {
+    background-color: #f4f3f3;
+    color: black;
+}
+
+/* Cart Items */
+#cart-items,
+#checkout-items {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    font-size: 2rem;
+    color: rgb(254, 254, 254);
+}
+
+.cart-item-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(255, 253, 253);
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-item-details h4 {
+    margin-bottom: 0.25rem;
+    color: rgb(255, 255, 255);
+}
+
+.cart-item-price {
+    color: #c79d49;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(244, 242, 240);
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1ceac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #ffffff;
+}
+
+.cart-item-remove {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.cart-summary,
+.checkout-total,
+.confirmation-total {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f8f8f8;
+}
+
+.subtotal,
+.tax,
+.total,
+.checkout-total,
+.confirmation-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+
+.total,
+.checkout-total,
+.confirmation-total {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+/* Checkout Form */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.radio-group input {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.order-summary {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #0f0f0f;
+    border-radius: 8px;
+}
+
+.order-summary h3 {
+    margin-bottom: 1rem;
+}
+
+/* Confirmation Modal */
+.confirmation-message {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #121312;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+}
+
+.confirmation-details {
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.confirmation-details h4 {
+    margin-bottom: 1rem;
+}
+
+.confirmation-info {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+#back-to-menu-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+#back-to-menu-btn:hover {
+    background-color: #705527;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5vh auto;
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .cart-item-quantity {
+        margin-top: 0.5rem;
+    }
+}
+
