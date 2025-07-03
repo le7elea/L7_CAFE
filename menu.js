@@ -4,10 +4,7 @@
         { name: "Capuccino", price: "₱150", description: "Cappuccino is a rich, creamy coffee made with espresso, steamed milk, and foam.", image: "images/coffee1.jpg" },
         { name: "Espresso", price: "₱100", description: "Espresso is a strong, concentrated coffee with a bold flavor and rich aroma.", image: "images/coffee2.jpg" },
         { name: "Café de Olla", price: "₱150", description: "Café de Olla is a spiced Mexican coffee made with cinnamon and brown sugar.", image: "images/coffee3.jpg" },
-        { name: "Cold Brew Coffee", price: "₱180", description: "Cold brew coffee is coffee brewed slowly with cold water for a smooth, less acidic taste.", image: "images/colfcoffee1.jpg" },
-        { name: "Iced Latte", price: "₱160", description: "An Iced Latte is a coffee drink made with espresso, chilled milk, and ice.", image: "images/coldcoffee2.jpg" },
-        { name: "Iced Mocha", price: "₱180", description: "An Iced Mocha is a chilled coffee drink made with espresso, chocolate, milk, and ice.", image: "images/coldcoffee3.jpg" }
-      ],
+        ],
       delis: [
         { name: "Swiss Sandwich on Rye", price: "₱250", description: "A Swiss Sandwich on Rye is a sandwich with Swiss cheese, and rye bread.", image: "images/deli1.jpg" },
         { name: "Italian Sub", price: "₱300", description: "An Italian Sub is a sandwich filled with Italian meats, cheese, and veggies in a sub roll.", image: "images/deli2.jpg" },
